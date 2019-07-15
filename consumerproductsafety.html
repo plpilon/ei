@@ -90,159 +90,86 @@
 			</nav>
 		</header>
 		<main property="mainContentOfPage" class="container">
-			<h1 property="name" id="wb-cont"></h1>
-			<br>
-			<div class="row">
-				<div class="col-sm-12">
-					<p id="service_department"></p>
-					<p id="service_year"></p>
-					<p id="service_title"></p>
-					<p id="service_description"></p>
-					<p id="service_fee"></p>
-				</div>
-			</div>
-
-		<h3>Online Availability of Services and Total Applications</h3>
-		<div class="row" id="dashboard">
-			<div class="col-md-12">
-				<p>If all the applicable components for a specific service are available online, that service is considered fully online.
-				<p>The total number of applications shows how often people or businesses applied for this service through all possible channels, such as online, mail, telephone, in-person and fax.</p>
-			</div>
-			<br>
-
-			<div class="col-md-8">
-				<table class="table" id="e_enablement">
-					<caption style="color: #666666">What components of this service are available online?</caption>
-					<thead>
-				   <tr>
-				     <th scope="col">Components of this Service</th>
-						 <th scope="col">Online Status</th>
-				   </tr>
-				  </thead>
-					<tbody>
-				   	<tr id="e_registration">
-				    	<td>A person or business can register a person, place or thing online</td>
-						</tr>
-						<tr id="e_authentication">
-				    	<td>They can authenticate themselves online</td>
-						</tr>
-						<tr id="e_application">
-				    	<td>They can apply online for this service</td>
-						</tr>
-						<tr id="e_decision">
-				    	<td>They can be informed of the department’s decision online or through an electronic format</td>
-						</tr>
-						<tr id="e_issuance">
-				    	<td>They can be issued documentation online</td>
-						</tr>
-						<tr id="e_feedback">
-				    	<td>They can provide feedback online</td>
-						</tr>
-				  </tbody>
-				</table>
-			</div>
-			<div class="col-md-4">
-				<div class="col-md-12"><canvas id="chart2" width="48%" height="50%"></canvas></div>
-				<div class="col-md-12">
-					<div class="col-xs-8" style="padding-left: 15px; padding-right: 10px; font-size: 18px">Percent of applications that take place online</div>
-					<div class="col-xs-4" style="text-align: center; padding: 5px 0px;"><h2 id="online_percent"></h2></div>
-				</div>
-			</div>
-		</div>
-
-		<br>
-		<p id="no-standards"></p>
-
-		<div id="standards" style="display: block">
-			<h3>Roll-up of Service Standard Performance</h3>
-			<p>Many services have service standards, this chart includes the performance against those service standards by the department in 2017-2018.</p>
-			<div class="row">
-				<div class="col-md-4 col-sm-12 float-right" style="text-align:center">
-            <canvas id="chart1" width="80%" height="50%"></canvas>
-						<div class="donut-inner">
-								<h2></h2>
-						</div>
-						<p id="target" style="font-size:100%;"></p>
-				</div>
-				<div class="col-md-8 col-sm-12" style="padding: 0% 15px">
-					<table id="table2" class="table table-striped table-hover"></table>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-			<br>
-
-
-			<div class="pagedetails">
-				<div class="row">
-					<div class="col-sm-6 col-md-5 col-lg-4">
-						<details class="brdr-0">
-							<summary class="btn btn-default text-center">Report a problem on this page</summary>
-							<div class="well row">
-								<div class="gc-rprt-prblm">
-									<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
-										<form action="#">
-											<fieldset>
-												<legend><span class="field-name">Please select all that apply: </span></legend>
-												<div class="checkbox">
-													<label for="problem1"><input type="checkbox" data-reveal="#broken" name="problem" value="Something is broken" id="problem1">Something is broken</label>
-												</div>
-												<div class="form-group hide" id="broken">
-													<label for="problem1-detail">Provide more details (optional):</label>
-													<input type="text" class="form-control full-width" id="problem1-detail">
-												</div>
-												<div class="checkbox">
-													<label for="problem2"><input type="checkbox" data-reveal="#spelling" name="problem" value="It has spelling or grammar mistakes" id="problem2">The page has spelling or grammar mistakes</label>
-												</div>
-												<div class="form-group hide" id="spelling">
-													<label for="problem2-detail">Provide more details (optional):</label>
-													<input type="text" class="form-control full-width" id="problem2-detail">
-												</div>
-												<div class="checkbox">
-													<label for="problem3"><input type="checkbox" data-reveal="#wrong" name="problem" value="The information is wrong" id="problem3">The information is wrong</label>
-												</div>
-												<div class="form-group hide" id="wrong">
-													<label for="problem3-detail">Provide more details (optional):</label>
-													<input type="text" class="form-control full-width" id="problem3-detail">
-												</div>
-												<div class="checkbox">
-													<label for="problem4"><input type="checkbox" data-reveal="#outdated" name="problem" value="The information is outdated" id="problem4">The information is outdated</label>
-												</div>
-												<div class="form-group hide" id="outdated">
-													<label for="problem4-detail">Provide more details (optional):</label>
-													<input type="text" class="form-control full-width" id="problem4-detail">
-												</div>
-												<div class="checkbox">
-													<label for="problem5"><input type="checkbox" data-reveal="#find" name="problem" value="I can’t find what I’m looking for" id="problem5">I can’t find what I’m looking for</label>
-												</div>
-												<div class="form-group hide" id="find">
-													<label for="problem5-detail">Describe what you’re looking for (optional):</label>
-													<input type="text" class="form-control full-width" id="problem5-detail">
-												</div>
-												<div class="checkbox">
-													<label for="problem6"><input type="checkbox" data-reveal="#confusing" name="problem" value="It’s confusing" id="problem6">Other</label>
-												</div>
-												<div class="form-group hide" id="confusing">
-													<label for="problem6-detail">Provide more details (optional):</label>
-													<input type="text" class="form-control full-width" id="problem6-detail">
-												</div>
-											</fieldset>
-											<button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Submit</button>
-										</form>
-									</div>
-									<div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
-										<h3>Thank you for your help!</h3>
-										<p>You will not receive a reply. For enquiries, please <a href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
-									</div>
-								</div>
-							</div>
-						</details>
-					</div>
-					<div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+			<section>
+  <h2 id="toc-01">Experimenting with content design</h2>
+  <p>Program: Consumer Product Safety Program</p>
+  <p>Department: <a href="https://www.canada.ca/en/health-canada.html">Health Canada</a></p>
+  <p>The mandate of Health Canada’s Consumer Product Safety Program is to:</p>
+  <ul>
+    <li>protect Canadians from unsafe products</li>
+    <li>ensure effective surveillance of the marketplace</li>
+    <li>serve as an early warning system for possible or emerging risks and hazards related to cosmetics and consumer products </li>
+  </ul>
+  <div class="well">
+    <p>Research question: Are enhancements to the landing page, compared to the existing one, resulting in more Canadians proceeding to the consumer incident report form?</p>
+  </div>
+  <p>Before the redesign of the Cosmetic or Consumer Product Incident Report Form web page, the rate of incident reporting by users was low. A low rate of reporting reduces our ability to:</p>
+  <ul>
+    <li>identify hazards</li>
+    <li>manage the risks posed by cosmetics and consumer products in the marketplace</li>
+  </ul>
+  <p>The reasons for the low rate of reporting, which were identified in interviews, included: </p>
+  <ul>
+    <li>low web visibility</li>
+    <li>difficulty filling out the cosmetic or consumer product incident report form</li>
+    <li>lack of transparency, such as not receiving a response after an incident report form was submitted</li>
+  </ul>
+  <section>
+    <h3>What we did</h3>
+    <p>The experiment was a randomized A/B test that used:</p>
+    <ul>
+      <li>the existing landing page for consumer incident reporting (Figure&nbsp;1)</li>
+      <li>a modified landing page (Figure&nbsp;2)</li>
+    </ul>
+    <p>The intent of the experiment was to determine if changes in language and presentation could successfully encourage users to complete the cosmetic or consumer incident report form.</p>
+    <p>The modified landing page improved the user interface by providing:</p>
+    <ul>
+      <li>a button that makes it easier to submit a report form</li>
+      <li>plain language instructions on how to fill out the report form</li>
+    </ul>
+    <p>The modified landing page provided clearer direction to users about:</p>
+    <ul>
+      <li>which incidents should be reported to the Consumer Product Safety Program</li>
+      <li>why incidents should be reported to the program</li>
+      <li>how to report such incidents </li>
+    </ul>
+    <p>For the experiment, users were sent to either the existing landing page (that is, the control group) or the modified landing page (that is, the experimental group).</p><div class="row wb-eqht wb-init wb-eqht-inited" id="wb-auto-5">
+      <div class="col-md-6" style="vertical-align: top; min-height: 348px;">
+        <p>Figure&nbsp;1: existing landing page</p>
+        <img src="/content/dam/tbs-sct/images/modernizing-modernisation/ew-eo/image-01-eng.jpg" alt=""> </div>
+      <div class="col-md-6" style="vertical-align: top; min-height: 348px;">
+        <p>Figure&nbsp;2: modified landing page</p>
+        <img src="/content/dam/tbs-sct/images/modernizing-modernisation/ew-eo/image-02-eng.jpg" alt=""> </div>
+    </div>
+    
+  </section>
+  <section>
+    <h3>What we found</h3>
+    <p>The experiment ran for 3&nbsp;months, from December&nbsp;12,&nbsp;2018, to March&nbsp;11,&nbsp;2019. During this time, there were 2,592&nbsp;page visits to the existing landing page and 1,999&nbsp;page visits to the modified landing page.</p>
+    <p>After reaching the landing page, visitors would click on a link to access the consumer incident report form. A greater number of visitors of the modified page accessed the cosmetic or consumer incident report form (61%), compared to visitors of the existing page (27%). The difference (34.0%) in the percentage of visitors who accessed the report form is statistically significant. This difference indicates that making the landing page more user-focused played an important role in encouraging users to access the incident report form.</p>
+  </section>
+  <section>
+    <h3>What we learned</h3>
+    <p>Data gaps</p>
+    <p>There were no data about the historical baseline of the incident report form web page because the analytics for the form were not previously tracked. The form is a single web page and data are only collected when a user submits a form, so no information about user behaviours is available apart from the number of forms submitted. </p>
+    <p>Openness drives innovation </p>
+    <p>There was early support for improving the landing page from senior management. Their support resulted in brainstorming sessions to explore different ways of experimenting with the current website. There were many fruitful discussions on how to change the landing page. The sessions and discussions resulted in a landing page that:</p>
+    <ul>
+      <li>was informative </li>
+      <li>enhanced the user experience</li>
+    </ul>
+    <p>Foster collaboration </p>
+    <p>In an ideal world, all of the skills that are needed for a project would be known from the outset. In practice, issues arose throughout the project, and they required different expertise and inputs. Therefore, regular team meetings were held, which helped not only to clarify roles, but also to identify challenges before they became problems. The regular meetings:</p>
+    <ul>
+      <li>fostered teamwork and collaboration</li>
+      <li>sustained optimism and focus</li>
+    </ul>
+    <p>Listen to your users</p>
+    <p>There are many applications for the data collected in the incident reporting system. Staff used the data to identify, assess and manage risks in support of the <em>Canada Consumer Product Safety Act</em>. In this context, enlisting the help of internal stakeholders within the program was essential to bridge the gap between subject matter experts, programmers and communications officers.</p>
+    <p><a class="btn btn-primary" href="https://medium.com/@exp_works/health-canadas-prodigy-experiment-results-and-the-path-forward-1618688810c2" role="button">Learn more on the EW blog</a></p>
+    <p><a href="#top">Top of page</a></p>
+  </section>
+</section>
 				</div>
 				<dl id="wb-dtmd">
 					<dt>Date modified:&#32;</dt>
