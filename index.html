@@ -629,86 +629,70 @@
                });
             </script>
          </main>
-         <div id="def-footer">
-            <!-- Write closure fall-back static file -->
-            <footer role="contentinfo" id="wb-info">
-               <nav role="navigation" class="container wb-navcurr">
-                  <h2 class="wb-inv">About government</h2>
-                  <ul class="list-unstyled colcount-sm-2 colcount-md-3">
-                     <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
-                     <li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
-                     <li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
-                     <li><a href="https://www.canada.ca/en/news.html">News</a></li>
-                     <li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
-                     <li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
-                     <li><a href="http://pm.gc.ca/eng">Prime Minister</a></li>
-                     <li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
-                     <li><a href="http://open.canada.ca/en/">Open government</a></li>
-                  </ul>
-               </nav>
-               <div class="brand">
-                  <div class="container">
-                     <div class="row">
-                        <nav class="col-md-10 ftr-urlt-lnk">
-                           <h2 class="wb-inv">About this site</h2>
-                           <ul>
-                              <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-                              <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-                              <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
-                              <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-                              <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
-                           </ul>
-                        </nav>
-                        <div class="col-xs-6 visible-sm visible-xs tofpg">
-                           <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
-                        </div>
-                        <div class="col-xs-6 col-md-2 text-right">
-                           <img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_28/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </footer>
-         </div>
-         <!-- Write closure template -->
-         <script>
-            var defFooter = document.getElementById("def-footer");
-            defFooter.outerHTML = wet.builder.appFooter({
-            
-            "footerSections": [{
-            "href": "/en/forms/contact-us",
-            "text": "Open Government Contact"
-            },{
-            "href": "https://www.canada.ca/en/government/dept.html",
-            "text": "Departments and agencies"
-            },{
-            "href": "https://www.canada.ca/en/government/publicservice.html",
-            "text": "Public service and military"
-            },{
-            "href": "http://news.gc.ca/",
-            "text": "News"
-            },{
-            "href": "https://www.canada.ca/en/government/system/laws.html",
-            "text": "Treaties, laws and regulations"
-            },{
-            "href": "https://www.canada.ca/en/transparency/reporting.html",
-            "text": "Government-wide reporting"
-            },{
-            "href": "/en/user",
-            "text": "Open Government Log In"
-            },{
-            "href": "https://www.canada.ca/en/government/system.html",
-            "text": "How government works"
-            }],
-            "showFeatures": false
-            
-            });
-         </script>
-         <!-- Write closure template -->
-         <script>
-            document.write(wet.builder.refFooter({
-            }));
-         </script>
-         <script src="/static/open_data/od_facet_buttons.js"></script>
-      </body>
-   </html>
+        		<footer id="wb-info">
+			<div class="landscape">
+				<nav class="container wb-navcurr">
+					<h2 class="wb-inv">About government</h2>
+					<ul class="list-unstyled colcount-sm-2 colcount-md-3">
+						<li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+						<li><a href="https://www.canada.ca/en/government/dept.html">Departments and agencies</a></li>
+						<li><a href="https://www.canada.ca/en/government/publicservice.html">Public service and military</a></li>
+						<li><a href="https://www.canada.ca/en/news.html">News</a></li>
+						<li><a href="https://www.canada.ca/en/government/system/laws.html">Treaties, laws and regulations</a></li>
+						<li><a href="https://www.canada.ca/en/transparency/reporting.html">Government-wide reporting</a></li>
+						<li><a href="https://pm.gc.ca/eng">Prime Minister</a></li>
+						<li><a href="https://www.canada.ca/en/government/system.html">How government works</a></li>
+						<li><a href="https://open.canada.ca/en/">Open government</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="brand">
+				<div class="container">
+					<div class="row">
+						<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+							<h2 class="wb-inv">About this site</h2>
+							<ul>
+								<li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+								<li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+								<li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+								<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+								<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+							</ul>
+						</nav>
+						<div class="col-xs-6 visible-sm visible-xs tofpg">
+							<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+						</div>
+						<div class="col-xs-6 col-md-3 col-lg-2 text-right">
+							<img src="https://search.open.canada.ca/chart/si/themes-dist-5.0.1/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--[if gte IE 9 | !IE ]><!-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript" charset="utf8"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+ 		<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js" integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw==" crossorigin="anonymous"></script> -->
+		<script src="https://search.open.canada.ca/chart/si/themes-dist-5.0.1/wet-boew/js/wet-boew.min.js"></script>
+
+
+
+		<!--<![endif]-->
+	<!--[if lt IE 9]>
+			<script src="https://search.open.canada.ca/chart/si/themes-dist-5.0.1/wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+		<![endif]-->
+		<script src="https://search.open.canada.ca/chart/si/themes-dist-5.0.1/GCWeb/js/theme.min.js"></script>
+		<script src="https://search.open.canada.ca/chart/si/load_chart.js"></script>
+		<script src="https://search.open.canada.ca/chart/si/load_table.js"></script>
+		<script src="https://search.open.canada.ca/chart/si/load_data.js"></script>
+
+
+	</body>
+	</html>
