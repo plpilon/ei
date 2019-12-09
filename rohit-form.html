@@ -33,5 +33,23 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
     </div>
+    
+    <script>
+    $('mG61Hd').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOwZxeuza31-bEgUsN2uT7ZUe9m_3FaRd4gJVwyliRelZoPg/formResponse",
+            data: $(this).serialize(),
+            type: "POST",
+            dataType: "xml",
+            success: function(data) {
+                console.log('Submission successful');
+            },
+            error: function(xhr, status, error) {
+                console.log('Submission failed: ' + error);
+            }
+        });
+    });
+</script>
   </body>
 </html>
