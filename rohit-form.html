@@ -13,8 +13,8 @@
       <br><br>
       <h1 class="text-center display-3">HTML Form to Google Sheet Test</h1>
       <br><br>
-      <!--<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOwZxeuza31-bEgUsN2uT7ZUe9m_3FaRd4gJVwyliRelZoPg/formResponse" target="_blank" method="POST" id="mG61Hd">-->
-      <form action="javascript:;" onsubmit="myFunction(this)"> 
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOwZxeuza31-bEgUsN2uT7ZUe9m_3FaRd4gJVwyliRelZoPg/formResponse" target="no-target" method="POST" id="mG61Hd">
+      
   <div class="form-group">
     <label for="exampleInputEmail1">Full Name</label>
     <input class="form-control" name="entry.936972512" aria-describedby="emailHelp"  placeholder="Enter name">
@@ -35,24 +35,5 @@
 </form>
     </div>
     
-   <script>
-    myFunction(this){
-     $('#ss-form').submit(function(e) {
-        e.preventDefault();
-        $.ajax({
-            url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOwZxeuza31-bEgUsN2uT7ZUe9m_3FaRd4gJVwyliRelZoPg/formResponse",
-            data: $(this).serialize(),
-            type: "POST",
-            dataType: "xml",
-            success: function(data) {
-                console.log('Submission successful');
-            },
-            error: function(xhr, status, error) {
-                console.log('Submission failed: ' + error);
-            }
-        });
-    });
-    }
-</script>
-  </body>
+    </body>
 </html>
