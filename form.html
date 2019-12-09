@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<form id="send-to-sheet">
+<input type="text" name="your-name">
+<input type="email" name="your-email">
+<input type="text" name="your-company">
+<input type="submit" id="submitBtn"> 
+</form> 
+</body>
+<script>
+
+jQuery('send-to-sheet').on('submit', function(e) {
+ 
+e.preventDefault();
+
+var jqxhr = jQuery.ajax({
+
+url: "https://script.google.com/macros/s/AKfycbzFjpEVT7DOEKCbtIUB5Kqf1y6AqSjA61PkVzw_MAMNoGM_wDQ/exec",
+method: "GET",
+dataType: "json",
+data: jQuery('send-to-sheet').serialize()
+
+}).success(
+
+function(e)
+{
+  // Do something here on successful submit
+}
+);
+});< /script>
+</html>
