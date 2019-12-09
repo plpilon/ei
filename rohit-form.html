@@ -13,7 +13,8 @@
       <br><br>
       <h1 class="text-center display-3">HTML Form to Google Sheet Test</h1>
       <br><br>
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOwZxeuza31-bEgUsN2uT7ZUe9m_3FaRd4gJVwyliRelZoPg/formResponse" target="_blank" method="POST" id="mG61Hd">
+      <!--<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOwZxeuza31-bEgUsN2uT7ZUe9m_3FaRd4gJVwyliRelZoPg/formResponse" target="_blank" method="POST" id="mG61Hd">-->
+      <form action="javascript:;" onsubmit="('#ss-form').submit(function(e)"> 
   <div class="form-group">
     <label for="exampleInputEmail1">Full Name</label>
     <input class="form-control" name="entry.936972512" aria-describedby="emailHelp"  placeholder="Enter name">
@@ -34,8 +35,8 @@
 </form>
     </div>
     
-    <script>
-    $('mG61Hd').submit(function(e) {
+   <script>
+    $('#ss-form').submit(function(e) {
         e.preventDefault();
         $.ajax({
             url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfOwZxeuza31-bEgUsN2uT7ZUe9m_3FaRd4gJVwyliRelZoPg/formResponse",
